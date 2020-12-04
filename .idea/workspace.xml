@@ -3,83 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e328bba7-0759-4f25-89b2-b3d2bae2ac76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ThirdPartyNotices.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ThirdPartyNotices.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ILSVRC2015/ImageSets/DET_train_30classes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/ILSVRC2015/ImageSets/DET_train_30classes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ILSVRC2015/ImageSets/VID_train_15frames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/ILSVRC2015/ImageSets/VID_train_15frames.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ILSVRC2015/ImageSets/VID_val_frames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/ILSVRC2015/ImageSets/VID_val_frames.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/ILSVRC2015/ImageSets/VID_val_videos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/ILSVRC2015/ImageSets/VID_val_videos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiments/fgfa_rfcn/cfgs/fgfa_rfcn_vid_demo.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/fgfa_rfcn/cfgs/fgfa_rfcn_vid_demo.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiments/fgfa_rfcn/cfgs/resnet_v1_101_flownet_imagenet_vid_rfcn_end2end_ohem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/fgfa_rfcn/cfgs/resnet_v1_101_flownet_imagenet_vid_rfcn_end2end_ohem.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiments/fgfa_rfcn/fgfa_rfcn_end2end_train_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/fgfa_rfcn/fgfa_rfcn_end2end_train_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiments/fgfa_rfcn/fgfa_rfcn_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/fgfa_rfcn/fgfa_rfcn_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/_init_paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/_init_paths.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/core/DataParallelExecutorGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/core/DataParallelExecutorGroup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/core/callback.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/core/callback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/core/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/core/loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/core/metric.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/core/metric.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/core/module.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/core/module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/core/rcnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/core/rcnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/core/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/core/tester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/function/test_rcnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/function/test_rcnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/function/test_rpn.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/function/test_rpn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/function/train_rcnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/function/train_rcnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/function/train_rpn.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/function/train_rpn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/operator_cxx/psroi_pooling-inl.h" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/operator_cxx/psroi_pooling-inl.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/operator_cxx/psroi_pooling.cc" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/operator_cxx/psroi_pooling.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/operator_cxx/psroi_pooling.cu" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/operator_cxx/psroi_pooling.cu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/operator_py/box_annotator_ohem.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/operator_py/box_annotator_ohem.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/operator_py/proposal.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/operator_py/proposal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/operator_py/proposal_target.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/operator_py/proposal_target.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/operator_py/rpn_inv_normalize.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/operator_py/rpn_inv_normalize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/operator_py/tile_as.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/operator_py/tile_as.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/symbols/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/symbols/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/train_end2end.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/train_end2end.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.bat" beforeDir="false" afterPath="$PROJECT_DIR$/init.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bbox/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bbox/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bbox/bbox.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bbox/bbox.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bbox/bbox_regression.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bbox/bbox_regression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bbox/bbox_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bbox/bbox_transform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bbox/setup_linux.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bbox/setup_linux.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bbox/setup_windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bbox/setup_windows.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dataset/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dataset/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dataset/ds_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dataset/ds_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dataset/imagenet_vid.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dataset/imagenet_vid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dataset/imagenet_vid_eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dataset/imagenet_vid_eval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dataset/imagenet_vid_eval_motion.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dataset/imagenet_vid_eval_motion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dataset/imdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dataset/imdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/cpu_nms.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/cpu_nms.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/gpu_nms.cu" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/gpu_nms.cu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/gpu_nms.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/gpu_nms.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/gpu_nms.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/gpu_nms.pyx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/nms.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/nms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/nms_kernel.cu" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/nms_kernel.cu" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/seq_nms.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/seq_nms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/setup_linux.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/setup_linux.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/setup_windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/setup_windows.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nms/setup_windows_cuda.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nms/setup_windows_cuda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rpn/generate_anchor.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rpn/generate_anchor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rpn/rpn.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rpn/rpn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/PrefetchingIter.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/PrefetchingIter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/combine_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/combine_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/create_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/create_logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/image_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/image_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/load_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/load_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/load_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/lr_scheduler.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/lr_scheduler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/roidb.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/roidb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/save_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/save_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/show_boxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/show_boxes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/symbol.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/symbol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/tictoc.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/tictoc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThirdPartyNotices.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn_aggflow.py" beforeDir="false" afterPath="$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn_aggflow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance_motion.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -245,7 +171,6 @@
         <option value="$PROJECT_DIR$/fgfa_rfcn/core/tester_front.py" />
         <option value="$PROJECT_DIR$/experiments/fgfa_rfcn/cfgs/fgfa_rfcn_vid_demo.yaml" />
         <option value="$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn_flow.py" />
-        <option value="$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn_aggflow.py" />
         <option value="$PROJECT_DIR$/fgfa_rfcn/symbols/__init__.py" />
         <option value="$PROJECT_DIR$/lib/dataset/imagenet_vid_eval_motion.py" />
         <option value="$PROJECT_DIR$/fgfa_rfcn/core/loader.py" />
@@ -255,9 +180,10 @@
         <option value="$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn.py" />
         <option value="$PROJECT_DIR$/fgfa_rfcn/plot_feature.py" />
         <option value="$PROJECT_DIR$/experiments/fgfa_rfcn/cfgs/resnet_v1_101_flownet_imagenet_vid_rfcn_end2end_ohem.yaml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn_aggflow.py" />
       </list>
     </option>
   </component>
@@ -278,6 +204,17 @@
             <path>
               <item name="Flow-Guided-Feature-Aggregation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Flow-Guided-Feature-Aggregation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Flow-Guided-Feature-Aggregation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Flow-Guided-Feature-Aggregation" type="462c0819:PsiDirectoryNode" />
+              <item name="fgfa_rfcn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Flow-Guided-Feature-Aggregation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Flow-Guided-Feature-Aggregation" type="462c0819:PsiDirectoryNode" />
+              <item name="fgfa_rfcn" type="462c0819:PsiDirectoryNode" />
+              <item name="symbols" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -377,7 +314,7 @@
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17958516" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17958516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -388,7 +325,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291536" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4033438" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4033438" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3291536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -445,14 +382,6 @@
         <state relative-caret-position="133">
           <caret line="194" column="4" selection-start-line="194" selection-start-column="4" selection-end-line="194" selection-end-column="4" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instance_motion.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThirdPartyNotices.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2206" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/dataset/imagenet_vid_groundtruth_motion_iou.mat">
@@ -579,27 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn_aggflow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="1142" column="55" selection-start-line="1141" selection-start-column="8" selection-end-line="1142" selection-end-column="55" />
-          <folding>
-            <element signature="e#1046#66940#0" />
-            <element signature="e#67030#67851#0" />
-            <element signature="e#67902#70128#0" />
-            <element signature="e#70176#71580#0" />
-            <element signature="e#71638#74788#0" />
-            <element signature="e#74834#77040#0" />
-            <element signature="e#77096#79299#0" />
-            <element signature="e#79342#80722#0" />
-            <element signature="e#80775#82113#0" />
-            <element signature="e#82325#82637#0" />
-            <element signature="e#82713#90814#0" />
-            <element signature="e#102442#103238#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fgfa_rfcn/train_end2end.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -686,6 +594,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/fgfa_rfcn/cfgs/resnet_v1_101_flownet_imagenet_vid_rfcn_end2end_ohem.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="187" column="15" selection-start-line="187" selection-start-column="15" selection-end-line="187" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="94" selection-start-column="94" selection-end-column="94" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instance_motion.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThirdPartyNotices.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2206" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fgfa_rfcn/demo_smoke.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+          <folding>
+            <element signature="e#327#345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fgfa_rfcn/plot_feature.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -762,46 +714,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiments/fgfa_rfcn/cfgs/resnet_v1_101_flownet_imagenet_vid_rfcn_end2end_ohem.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="187" column="15" selection-start-line="187" selection-start-column="15" selection-end-line="187" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fgfa_rfcn/demo_smoke.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
-          <folding>
-            <element signature="e#327#345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/init.bat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/init.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="94" selection-start-column="94" selection-end-column="94" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fgfa_rfcn/symbols/resnet_v1_101_flownet_rfcn_aggflow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="1145" column="17" selection-start-line="1145" selection-start-column="17" selection-end-line="1145" selection-end-column="17" />
+          <folding>
+            <element signature="e#1046#66940#0" />
+            <element signature="e#67030#67851#0" />
+            <element signature="e#67902#70128#0" />
+            <element signature="e#70176#71580#0" />
+            <element signature="e#71638#74788#0" />
+            <element signature="e#74834#77040#0" />
+            <element signature="e#77096#79299#0" />
+            <element signature="e#79342#80722#0" />
+            <element signature="e#80775#82113#0" />
+            <element signature="e#82325#82637#0" />
+            <element signature="e#82713#90814#0" />
+          </folding>
         </state>
       </provider>
     </entry>
