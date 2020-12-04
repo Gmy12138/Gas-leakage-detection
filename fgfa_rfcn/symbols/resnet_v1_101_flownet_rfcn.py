@@ -1230,16 +1230,7 @@ class resnet_v1_101_flownet_rfcn_1(Symbol):
         # 光流网络的输入为cur_data_copies和data_cache，这里flow_input的输入为光流计算两个图concat
         flow_input = mx.symbol.Concat(cur_data_copies / 255.0, data_cache / 255.0, dim=1)
         flow = self.get_flownet(flow_input)
-        # flow_upsample = mx.sym.UpSampling(flow,scale=16,sample_type='nearest')
-        # flow_upsample = mx.symbol.contrib.BilinearResize2D(flow, height=40,width=50)
-        flow_slice = mx.sym.SliceChannel(flow, axis=0, num_outputs=data_range, name='flow')
-        # 提取光流运动信息，用以加强聚合特征
 
-        flow1 = self.get_feature_relu(flow)
-        flow1 = mx.sym.SliceChannel(flow1, axis=0, num_outputs=data_range, name='flow1')
-        # 用前一帧光流
-        # front_flow = mx.symbol.slice_axis(flow, axis=0, begin=cfg.TEST.KEY_FRAME_INTERVAL - 1,end=cfg.TEST.KEY_FRAME_INTERVAL)
-        # flow_feature = self.get_feature_relu(front_flow)
 
         # 双线性采样
         flow_grid = mx.sym.GridGenerator(data=flow, transform_type='warp', name='flow_grid')
@@ -1258,12 +1249,8 @@ class resnet_v1_101_flownet_rfcn_1(Symbol):
 
         # 使用softmax对对应的进行归一化
         weights = mx.symbol.softmax(data=unnormalize_weight, axis=0)
-
-        w = weights
-        w = mx.sym.Pooling(name='pool', data=w, pool_type='avg', global_pool=True)
-        w = mx.sym.Reshape(name='reshape', data=w, shape=(-1, 1, 1))
-        k = mx.symbol.argmax(w, axis=0, name='k')
         weights = mx.sym.SliceChannel(weights, axis=0, num_outputs=data_range)
+
         # tile part
         # 聚合的卷积特征
         aggregated_conv_feat = 0
@@ -1276,25 +1263,13 @@ class resnet_v1_101_flownet_rfcn_1(Symbol):
             aggregated_conv_feat = aggregated_conv_feat + tiled_weight * warp_list[i]
         # print aggregated_conv_feat[0]
 
-        # 聚合 flow_feature 和 aggregated_conv_feat
-        # flow_agg = 0
-        # for i in range(data_range):
-        #     flow_agg = flow_agg + flow_slice[i] / data_range
-        #     # tiled_weight = mx.symbol.tile(data=weights[i], reps=(1, 2, 1, 1))
-        #     # flow_agg = flow_agg + flow_slice[i] * tiled_weight
-
-        # flow_feature = self.get_feature_relu(flow_agg)
-        # concat融合
-        # concat_feature = mx.symbol.Concat(flow_feature, aggregated_conv_feat, dim=1)
-
-        # aggregated_conv_feat1 = self.concat_conv_relu(concat_feature)
 
         ##############################################
 
         # group output
         # group = mx.sym.Group([data_cur,im_info,flow,flow1,aggregated_conv_feat,aggregated_conv_feat1])
         # group = mx.sym.Group([w, k, data_cur, im_info, flow_slice, flow_g, flow_agg, aggregated_conv_feat1])
-        group = mx.sym.Group([w, k, data_cur, im_info, flow_slice, flow_g, flow1])
+        group = mx.sym.Group([data_cur, im_info, flow,flow_g])
         # group = mx.sym.Group([w, k, data_cur, im_info, flow_slice])
         self.sym = group
         return group
@@ -2583,16 +2558,7 @@ class resnet_v1_101_flownet_rfcn_2(Symbol):
         # 光流网络的输入为cur_data_copies和data_cache，这里flow_input的输入为光流计算两个图concat
         flow_input = mx.symbol.Concat(cur_data_copies / 255.0, data_cache / 255.0, dim=1)
         flow = self.get_flownet(flow_input)
-        # flow_upsample = mx.sym.UpSampling(flow,scale=16,sample_type='nearest')
-        # flow_upsample = mx.symbol.contrib.BilinearResize2D(flow, height=40,width=50)
-        flow_slice = mx.sym.SliceChannel(flow, axis=0, num_outputs=data_range, name='flow')
-        # 提取光流运动信息，用以加强聚合特征
 
-        flow1 = self.get_feature_relu(flow)
-        flow1 = mx.sym.SliceChannel(flow1, axis=0, num_outputs=data_range, name='flow1')
-        # 用前一帧光流
-        # front_flow = mx.symbol.slice_axis(flow, axis=0, begin=cfg.TEST.KEY_FRAME_INTERVAL - 1,end=cfg.TEST.KEY_FRAME_INTERVAL)
-        # flow_feature = self.get_feature_relu(front_flow)
 
         # 双线性采样
         flow_grid = mx.sym.GridGenerator(data=flow, transform_type='warp', name='flow_grid')
@@ -2611,12 +2577,8 @@ class resnet_v1_101_flownet_rfcn_2(Symbol):
 
         # 使用softmax对对应的进行归一化
         weights = mx.symbol.softmax(data=unnormalize_weight, axis=0)
-
-        w = weights
-        w = mx.sym.Pooling(name='pool', data=w, pool_type='avg', global_pool=True)
-        w = mx.sym.Reshape(name='reshape', data=w, shape=(-1, 1, 1))
-        k = mx.symbol.argmax(w, axis=0, name='k')
         weights = mx.sym.SliceChannel(weights, axis=0, num_outputs=data_range)
+
         # tile part
         # 聚合的卷积特征
         aggregated_conv_feat = 0
@@ -2627,27 +2589,14 @@ class resnet_v1_101_flownet_rfcn_2(Symbol):
             # aggregated_conv_feat += tiled_weight * warp_list[i]
             # 聚合方式，通过自适应权重聚合不同的卷积特征
             aggregated_conv_feat = aggregated_conv_feat + tiled_weight * warp_list[i]
-        # print aggregated_conv_feat[0]
 
-        # 聚合 flow_feature 和 aggregated_conv_feat
-        # flow_agg = 0
-        # for i in range(data_range):
-        #     flow_agg = flow_agg + flow_slice[i] / data_range
-        #     # tiled_weight = mx.symbol.tile(data=weights[i], reps=(1, 2, 1, 1))
-        #     # flow_agg = flow_agg + flow_slice[i] * tiled_weight
-
-        # flow_feature = self.get_feature_relu(flow_agg)
-        # concat融合
-        # concat_feature = mx.symbol.Concat(flow_feature, aggregated_conv_feat, dim=1)
-
-        # aggregated_conv_feat1 = self.concat_conv_relu(concat_feature)
 
         ##############################################
 
         # group output
         # group = mx.sym.Group([data_cur,im_info,flow,flow1,aggregated_conv_feat,aggregated_conv_feat1])
         # group = mx.sym.Group([w, k, data_cur, im_info, flow_slice, flow_g, flow_agg, aggregated_conv_feat1])
-        group = mx.sym.Group([w, k, data_cur, im_info, flow_slice, flow_g, flow1])
+        group = mx.sym.Group([data_cur, im_info, flow, flow_g])
         # group = mx.sym.Group([w, k, data_cur, im_info, flow_slice])
         self.sym = group
         return group
